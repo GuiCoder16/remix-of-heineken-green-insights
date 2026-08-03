@@ -1,0 +1,69 @@
+.chart-panel {
+  margin-top: 0;
+}
+
+.chart-panel-header {
+  margin-bottom: 1rem;
+}
+
+.chart-panel-title {
+  margin: 0;
+  color: var(--brand-deep);
+  font-size: 1.125rem;
+  line-height: 1.3;
+  font-weight: 800;
+}
+
+.chart-panel-caption {
+  margin: 0.25rem 0 0;
+  color: var(--muted-foreground);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.chart-canvas {
+  width: 100%;
+  min-height: 20rem;
+}
+
+.chart-frame {
+  position: relative;
+  width: 100%;
+  min-height: 16.25rem;
+  margin-top: 1.5rem;
+  overflow: hidden;
+}
+
+.chart-frame-large {
+  min-height: 20rem;
+  margin-top: 0;
+}
+
+.chart-frame-daily {
+  min-height: 21.25rem;
+  margin-top: 0;
+}
+
+.chart-frame[data-chart="inventario-diario"] {
+  min-height: 15rem;
+}
+
+.chart-frame[data-chart="desvios-progressao"],
+.chart-frame[data-chart="auditoria-progressao"] {
+  min-height: 18.75rem;
+}
+
+.chart-frame::before {
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(0deg, transparent 0 3.4rem, color-mix(in oklab, var(--border) 75%, transparent) 3.4rem calc(3.4rem + 1px)),
+    linear-gradient(180deg, color-mix(in oklab, var(--brand-glow) 8%, transparent), transparent 45%);
+  content: "";
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.chart-frame.has-chart::before {
+  opacity: 0;
+}

@@ -1,0 +1,40 @@
+:root {
+  --radius-sm: 0.5rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1rem;
+
+  --brand: oklch(0.55 0.17 148);
+  --brand-glow: oklch(0.72 0.19 148);
+  --brand-deep: oklch(0.32 0.11 150);
+  --gold: oklch(0.82 0.15 85);
+
+  --background: oklch(0.98 0.01 150);
+  --foreground: oklch(0.22 0.05 150);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.22 0.05 150);
+  --primary: var(--brand);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.94 0.03 150);
+  --secondary-foreground: var(--brand-deep);
+  --muted: oklch(0.95 0.02 150);
+  --muted-foreground: oklch(0.45 0.04 150);
+  --accent: oklch(0.93 0.05 148);
+  --accent-foreground: var(--brand-deep);
+  --destructive: oklch(0.58 0.22 27);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.88 0.02 150);
+  --input: oklch(0.9 0.02 150);
+  --ring: var(--brand);
+  --brand-foreground: oklch(0.99 0 0);
+  --chart-destructive-mixed: color-mix(in oklab, var(--destructive) 55%, var(--brand-deep));
+
+  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 30px -20px color-mix(in oklab, var(--brand-deep) 45%, transparent);
+  --shadow-lg: 0 10px 40px -20px rgba(4, 79, 45, 0.35);
+  --focus-ring: 0 0 0 3px color-mix(in oklab, var(--ring) 24%, transparent);
+}

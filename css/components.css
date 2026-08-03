@@ -1,0 +1,552 @@
+.brand-mark {
+  display: inline-grid;
+  width: 3.5rem;
+  height: 3.5rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: var(--radius-2xl);
+  color: white;
+  background: linear-gradient(135deg, var(--brand-glow), var(--brand), var(--brand-deep));
+  box-shadow: 0 12px 28px -18px color-mix(in oklab, var(--brand) 70%, black);
+}
+
+.brand-mark svg {
+  width: 2rem;
+  height: 2rem;
+  fill: currentColor;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid color-mix(in oklab, var(--brand) 30%, transparent);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--brand-deep);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.status-panel {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-2xl);
+  background: var(--card);
+  box-shadow: var(--shadow-lg);
+  padding: 1.5rem;
+}
+
+.status-panel h1 {
+  margin: 0;
+  color: var(--brand-deep);
+  font-size: 1.125rem;
+  line-height: 1.3;
+}
+
+.status-panel p {
+  margin: 0.5rem 0 0;
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.loading-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.loading-dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 999px;
+  background: var(--brand);
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+.foundation-list {
+  display: grid;
+  gap: 0.5rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.foundation-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  color: var(--brand-deep);
+  font-size: 0.875rem;
+}
+
+.foundation-list li::before {
+  width: 0.45rem;
+  height: 0.45rem;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: var(--brand);
+  content: "";
+}
+
+.error-panel {
+  border-color: color-mix(in oklab, var(--destructive) 38%, var(--border));
+}
+
+.error-panel h1 {
+  color: var(--destructive);
+}
+
+.error-details {
+  margin-top: 1rem;
+  border-radius: var(--radius-md);
+  background: color-mix(in oklab, var(--destructive) 8%, white);
+  color: var(--destructive);
+  padding: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.panel {
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-2xl);
+  background: var(--card);
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem;
+}
+
+.panel-featured {
+  margin-bottom: 2.5rem;
+  padding: 1.25rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.panel-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.panel-header-balanced {
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.section-eyebrow,
+.kpi-group {
+  display: block;
+  margin: 0;
+  color: var(--brand);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin: 0.25rem 0 0;
+  color: var(--brand-deep);
+  font-size: 1.125rem;
+  line-height: 1.3;
+  font-weight: 800;
+}
+
+.section-caption {
+  margin: 0.25rem 0 0;
+  color: var(--muted-foreground);
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+.compact-caption {
+  margin-top: 0.25rem;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.text-brand {
+  color: var(--brand);
+}
+
+.text-brand-deep {
+  color: var(--brand-deep);
+}
+
+.text-destructive {
+  color: var(--destructive);
+}
+
+.indicator-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-2xl);
+  background: var(--card);
+  color: inherit;
+  padding: 1.25rem;
+  text-align: left;
+  box-shadow: var(--shadow-sm);
+  transition:
+    box-shadow 160ms ease,
+    transform 160ms ease,
+    border-color 160ms ease;
+}
+
+.indicator-card:hover {
+  box-shadow: 0 10px 30px -15px rgba(4, 79, 45, 0.4);
+  transform: translateY(-0.125rem);
+}
+
+.indicator-card:focus-visible,
+.segmented-control button:focus-visible,
+.clickable-row:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.indicator-card.is-active {
+  box-shadow:
+    var(--shadow-sm),
+    0 0 0 2px color-mix(in oklab, var(--brand) 50%, transparent);
+}
+
+.indicator-card.tone-warn.is-active {
+  box-shadow:
+    var(--shadow-sm),
+    0 0 0 2px color-mix(in oklab, var(--gold) 60%, transparent);
+}
+
+.indicator-card.tone-bad.is-active {
+  box-shadow:
+    var(--shadow-sm),
+    0 0 0 2px color-mix(in oklab, var(--destructive) 50%, transparent);
+}
+
+.indicator-card.tone-muted.is-active {
+  box-shadow:
+    var(--shadow-sm),
+    0 0 0 2px var(--border);
+}
+
+.indicator-card-bar {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 0.25rem;
+  background: linear-gradient(90deg, var(--brand-glow), var(--brand));
+  pointer-events: none;
+}
+
+.indicator-card.tone-warn .indicator-card-bar {
+  background: linear-gradient(90deg, var(--gold), color-mix(in oklab, var(--gold) 40%, var(--brand-deep)));
+}
+
+.indicator-card.tone-bad .indicator-card-bar {
+  background: linear-gradient(90deg, var(--destructive), var(--brand-deep));
+}
+
+.indicator-card.tone-muted .indicator-card-bar {
+  background: linear-gradient(90deg, var(--border), var(--muted));
+}
+
+.indicator-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.kpi-name {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--brand-deep);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.kpi-value {
+  display: block;
+  margin-top: 1rem;
+  color: var(--brand-deep);
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.1;
+}
+
+.kpi-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+  color: var(--muted-foreground);
+  font-size: 0.6875rem;
+}
+
+.kpi-meta-value,
+.metric-gap {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.kpi-meta-value {
+  color: color-mix(in oklab, var(--brand-deep) 80%, transparent);
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--brand) 15%, transparent);
+  color: var(--brand-deep);
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.status-badge.is-compact {
+  padding: 0.125rem 0.5rem;
+  font-size: 0.625rem;
+}
+
+.status-badge.tone-warn {
+  background: color-mix(in oklab, var(--gold) 25%, transparent);
+  color: var(--brand-deep);
+}
+
+.status-badge.tone-bad {
+  background: color-mix(in oklab, var(--destructive) 15%, transparent);
+  color: var(--destructive);
+}
+
+.status-badge.tone-muted {
+  background: var(--secondary);
+  color: var(--muted-foreground);
+}
+
+.status-dot {
+  width: 0.375rem;
+  height: 0.375rem;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: var(--brand);
+}
+
+.status-badge.tone-warn .status-dot {
+  background: var(--gold);
+}
+
+.status-badge.tone-bad .status-dot {
+  background: var(--destructive);
+}
+
+.status-badge.tone-muted .status-dot {
+  background: var(--muted-foreground);
+}
+
+.legend-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--muted-foreground);
+  font-size: 0.75rem;
+}
+
+.legend-dot {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-dot span {
+  display: inline-block;
+  width: 1rem;
+  height: 0.625rem;
+  border-radius: 0.125rem;
+  background: var(--brand);
+}
+
+.legend-gold span {
+  background: var(--gold);
+}
+
+.legend-dashed span {
+  background: repeating-linear-gradient(90deg, var(--gold) 0 4px, transparent 4px 7px);
+}
+
+.segmented-control {
+  display: inline-flex;
+  flex: 0 0 auto;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--secondary) 40%, transparent);
+  padding: 0.25rem;
+}
+
+.segmented-control button {
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted-foreground);
+  padding: 0.375rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.segmented-control button:hover {
+  color: var(--brand-deep);
+}
+
+.segmented-control button.is-active {
+  background: var(--brand);
+  color: var(--brand-foreground);
+  box-shadow: var(--shadow-sm);
+}
+
+.table-panel {
+  margin-top: 2.5rem;
+}
+
+.table-title {
+  margin: 0;
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.table-scroll {
+  overflow: auto;
+  margin-top: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+thead {
+  background: color-mix(in oklab, var(--secondary) 60%, transparent);
+  color: var(--secondary-foreground);
+  text-align: left;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+th,
+td {
+  padding: 0.75rem 1rem;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+tbody tr {
+  border-top: 1px solid var(--border);
+}
+
+.numeric {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.strong-cell {
+  color: var(--brand-deep);
+  font-weight: 700;
+}
+
+[aria-labelledby="monthly-results-title"] .strong-cell {
+  font-weight: 500;
+}
+
+.strong-number {
+  font-weight: 700;
+}
+
+.muted-number,
+.muted-cell,
+.value-muted {
+  color: var(--muted-foreground);
+}
+
+.value-good {
+  color: var(--brand);
+}
+
+.value-bad {
+  color: var(--destructive);
+}
+
+.clickable-row {
+  cursor: pointer;
+  transition: background-color 160ms ease;
+}
+
+.clickable-row:hover {
+  background: color-mix(in oklab, var(--accent) 40%, transparent);
+}
+
+.clickable-row.is-active {
+  background: color-mix(in oklab, var(--accent) 50%, transparent);
+}
+
+.direction-cell {
+  font-size: 0.75rem;
+}
+
+.sync-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  white-space: nowrap;
+}
+
+.sync-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: var(--brand);
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.82);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
