@@ -48,7 +48,8 @@
     { "day": 24, "val": 99.72 },
     { "day": 27, "val": 99.58 },
     { "day": 28, "val": 99.28 },
-    { "day": 29, "val": 99.43 }
+    { "day": 29, "val": 99.43 },
+    { "day": 30, "val": 99.20 }
   ],
   "inventarioDiario": [
     { "day": 1, "val": 100 },
@@ -71,7 +72,8 @@
     { "day": 27, "val": 100 },
     { "day": 28, "val": 100 },
     { "day": 29, "val": 100 },
-    { "day": 30, "val": 0 }
+    { "day": 30, "val": 100 },
+    { "day": 31, "val": 100 }
   ],
   "tempoMensalMin": [270, 259, 495, 372, 281, 342, 576],
   "indicators": [
@@ -91,9 +93,9 @@
       "group": "Planejamento",
       "unit": "pct",
       "direction": "higher",
-      "meta": 96.36,
-      "ytd": 117,
-      "monthly": [119, 129, 111, 141, 110, 115, 94]
+      "meta": 18,
+      "ytd": 109.63,
+      "monthly": [119, 129, 111, 141, 110, 115, 112, 40]
     },
     {
       "id": "ocupacao",
@@ -101,9 +103,9 @@
       "group": "Armazém",
       "unit": "pct",
       "direction": "higher",
-      "meta": 97,
-      "ytd": 99.05,
-      "monthly": [102.02, 102.33, 99.1, 69.14, 123.08, 99.04, 98.67]
+      "meta": 85,
+      "ytd": 85,
+      "monthly": [75.80, 81.80, 86.50, 85.60, 64.50, 71.90, 83.50, 67.20]
     },
     {
       "id": "grade_planejamento",
@@ -122,8 +124,8 @@
       "unit": "pct",
       "direction": "lower",
       "meta": 3.8,
-      "ytd": 1.54,
-      "monthly": [3.2, 3.4, 0.2, 2.2, 1.0, 0.0, 0.8]
+      "ytd": 1.28,
+      "monthly": [3.2, 3.4, 0.2, 2.2, 1.0, 0.0, 0.0, 0.20]
     },
     {
       "id": "writeoff",
@@ -182,8 +184,8 @@
       "unit": "pct",
       "direction": "higher",
       "meta": 100,
-      "ytd": 75.14,
-      "monthly": [87, 84, 85, 85, 82, 55, 48]
+      "ytd": 75.42,
+      "monthly": [87, 84, 85, 85, 82, 55, 50]
     },
     {
       "id": "aderencia_rf_wh",
@@ -192,8 +194,8 @@
       "unit": "pct",
       "direction": "higher",
       "meta": 100,
-      "ytd": 76.71,
-      "monthly": [88, 84, 85, 86, 83, 56, 55]
+      "ytd": 77.51,
+      "monthly": [88, 84, 85, 86, 83, 56, 61]
     },
     {
       "id": "aderencia_rf_portaria",
@@ -202,8 +204,8 @@
       "unit": "pct",
       "direction": "higher",
       "meta": 100,
-      "ytd": 96.67,
-      "monthly": [99, 99, 99, 99, 98, 98, 87]
+      "ytd": 96.17,
+      "monthly": [99, 99, 99, 99, 98, 98, 84]
     },
     {
       "id": "warehouse_eff",
@@ -243,7 +245,7 @@
       "direction": "lower",
       "meta": 544003,
       "ytd": 90667,
-      "monthly": [-560, 137120, -15036, 438430, -12112, -3839, null]
+      "monthly": [-560, 137120, -15036, 438430, -12112, -3839]
     },
     {
       "id": "acidentes",
