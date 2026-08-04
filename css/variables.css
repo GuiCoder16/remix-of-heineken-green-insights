@@ -8,11 +8,11 @@
   --brand: oklch(0.55 0.17 148);
   --brand-glow: oklch(0.72 0.19 148);
   --brand-deep: oklch(0.32 0.11 150);
-  --gold: oklch(0.82 0.15 85);
+  --gold: oklch(64.739% 0.13526 101.518);
 
-  --background: oklch(0.98 0.01 150);
-  --foreground: oklch(0.22 0.05 150);
-  --card: oklch(1 0 0);
+  --background: oklch(77.267% 0.086 144.734);
+  --foreground: oklch(26.659% 0.00904 159.611);
+  --card: oklch(98.483% 0.00121 107.824);
   --card-foreground: oklch(0.22 0.05 150);
   --primary: var(--brand);
   --primary-foreground: oklch(0.99 0 0);
