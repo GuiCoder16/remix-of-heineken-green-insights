@@ -386,6 +386,10 @@
   background: var(--brand);
 }
 
+.legend-brand span {
+  background: var(--chart-result);
+}
+
 .legend-gold span {
   background: var(--gold);
 }

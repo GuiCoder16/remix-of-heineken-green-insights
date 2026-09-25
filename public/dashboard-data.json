@@ -1,5 +1,5 @@
   {
-  "months": ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul"],
+  "months": ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set"],
   "metas": {
     "tempoDia": 120,
     "acuracidade": 95,
@@ -7,49 +7,33 @@
     "tempoMes": 480
   },
   "tempoDiario": [
-    { "day": 1, "minutes": 37 },
-    { "day": 2, "minutes": 85 },
-    { "day": 3, "minutes": 55 },
-    { "day": 6, "minutes": 100 },
-    { "day": 7, "minutes": 74 },
-    { "day": 8, "minutes": 109 },
-    { "day": 10, "minutes": 44 },
-    { "day": 13, "minutes": 66 },
-    { "day": 14, "minutes": 87 },
-    { "day": 15, "minutes": 48 },
-    { "day": 16, "minutes": 42 },
-    { "day": 17, "minutes": 85 },
-    { "day": 20, "minutes": 16 },
-    { "day": 21, "minutes": 82 },
-    { "day": 22, "minutes": 48 },
-    { "day": 23, "minutes": 79 },
-    { "day": 24, "minutes": 58 },
-    { "day": 27, "minutes": 47 },
-    { "day": 28, "minutes": 36 },
-    { "day": 29, "minutes": 56 }
+    { "day": 1, "minutes": 78 },
+    { "day": 2, "minutes": 122 },
+    { "day": 3, "minutes": 108 },
+    { "day": 8, "minutes": 112 },
+    { "day": 10, "minutes": 76 },
+    { "day": 14, "minutes": 349 },
+    { "day": 15, "minutes": 44 },
+    { "day": 16, "minutes": 53 },
+    { "day": 17, "minutes": 42 },
+    { "day": 21, "minutes": 104 },
+    { "day": 22, "minutes": 39 },
+    { "day": 23, "minutes": 83 }
   ],
   "acuracidadeDiaria": [
-    { "day": 1, "val": 99.81 },
-    { "day": 2, "val": 98.38 },
-    { "day": 3, "val": 98.54 },
-    { "day": 6, "val": 99.1 },
-    { "day": 7, "val": 98.15 },
-    { "day": 8, "val": 86.48 },
-    { "day": 10, "val": 99.85 },
-    { "day": 13, "val": 99.98 },
-    { "day": 14, "val": 99.98 },
-    { "day": 15, "val": 98.07 },
-    { "day": 16, "val": 99.31 },
-    { "day": 17, "val": 99.82 },
-    { "day": 20, "val": 99.94 },
-    { "day": 21, "val": 99.88 },
-    { "day": 22, "val": 99.72 },
-    { "day": 23, "val": 99.64 },
-    { "day": 24, "val": 99.72 },
-    { "day": 27, "val": 99.58 },
-    { "day": 28, "val": 99.28 },
-    { "day": 29, "val": 99.43 },
-    { "day": 30, "val": 99.20 }
+    { "day": 1, "val": 99.48 },
+    { "day": 2, "val": 99.37 },
+    { "day": 3, "val": 99.34 },
+    { "day": 8, "val": 98.91 },
+    { "day": 10, "val": 99.40 },
+    { "day": 14, "val": 99.74 },
+    { "day": 15, "val": 99.58 },
+    { "day": 16, "val": 99.56 },
+    { "day": 17, "val": 99.85 },
+    { "day": 21, "val": 99.54 },
+    { "day": 22, "val": 96.31 },
+    { "day": 23, "val": 98.17 },
+    { "day": 24, "val": 0}
   ],
   "inventarioDiario": [
     { "day": 1, "val": 100 },
@@ -75,7 +59,7 @@
     { "day": 30, "val": 100 },
     { "day": 31, "val": 100 }
   ],
-  "tempoMensalMin": [270, 259, 495, 372, 281, 342, 576],
+  "tempoMensalMin": [270, 259, 495, 372, 281, 342, 576, 94, 93],
   "indicators": [
     {
       "id": "trt",
@@ -85,17 +69,7 @@
       "direction": "higher",
       "meta": 95,
       "ytd": 77.86,
-      "monthly": [60, 76, 69, 82, 68, 94, 96]
-    },
-    {
-      "id": "aderencia_plano",
-      "name": "Aderência ao Plano",
-      "group": "Planejamento",
-      "unit": "pct",
-      "direction": "higher",
-      "meta": 18,
-      "ytd": 109.63,
-      "monthly": [119, 129, 111, 141, 110, 115, 112, 40]
+      "monthly": [60, 76, 69, 82, 68, 94, 96, 68, 109]
     },
     {
       "id": "ocupacao",
@@ -105,7 +79,7 @@
       "direction": "higher",
       "meta": 85,
       "ytd": 77.10,
-      "monthly": [75.80, 81.80, 86.50, 85.60, 64.50, 71.90, 83.50, 67.20]
+      "monthly": [75.80, 81.80, 86.50, 85.60, 64.50, 71.90, 83.50, 71.00, 84.47]
     },
     {
       "id": "grade_planejamento",
@@ -115,7 +89,7 @@
       "direction": "higher",
       "meta": 97,
       "ytd": 99.05,
-      "monthly": [102.02, 102.33, 99.1, 69.14, 123.08, 99.04, 98.67]
+      "monthly": [102.02, 102.33, 99.1, 69.14, 123.08, 99.04, 98.67, 100.0, 100.0]
     },
     {
       "id": "stockout",
@@ -123,9 +97,9 @@
       "group": "Serviço",
       "unit": "pct",
       "direction": "lower",
-      "meta": 3.8,
+      "meta": 3.5,
       "ytd": 1.28,
-      "monthly": [3.2, 3.4, 0.2, 2.2, 1.0, 0.0, 0.0, 0.20]
+      "monthly": [3.2, 3.4, 0.2, 2.2, 1.0, 0.0, 0.0, 0.5, 0.4]
     },
     {
       "id": "writeoff",
@@ -135,7 +109,7 @@
       "direction": "lower",
       "meta": 276661,
       "ytd": 224691,
-      "monthly": [18799, 217796, 19621, -60503, 19985, 11316, -2324]
+      "monthly": [18799, 217796, 19621, -60503, 19985, 11316, -23240, 28000, 93451]
     },
     {
       "id": "inventario",
@@ -145,7 +119,7 @@
       "direction": "higher",
       "meta": 99.82,
       "ytd": 99.23,
-      "monthly": [null, 98.08, 99.81, 98.87, 99.87, 99.92, 98.83]
+      "monthly": [null, 98.08, 99.81, 98.87, 99.87, 99.92, 98.83, 99.28, 99.76]
     },
     {
       "id": "produtividade",
@@ -155,17 +129,7 @@
       "direction": "higher",
       "meta": 1538,
       "ytd": 1507,
-      "monthly": [1503, 1715, 1482, 1578, 1511, 1254, null]
-    },
-    {
-      "id": "custohl",
-      "name": "Custo / HL",
-      "group": "Financeiro",
-      "unit": "num",
-      "direction": "lower",
-      "meta": 9.99,
-      "ytd": 13.06,
-      "monthly": [13.12, 9.69, 10.46, 16.4, 15.28, 13.39, null]
+      "monthly": [1503, 1715, 1482, 1578, 1511, 1254, 1273.5, 1392.6, null]
     },
     {
       "id": "cutoff",
@@ -175,7 +139,7 @@
       "direction": "lower",
       "meta": 0.5,
       "ytd": 3.62,
-      "monthly": [13.86, 0.06, 4.86, 0.0, 2.77, 0.95, 2.84]
+      "monthly": [13.86, 0.06, 4.86, 0.0, 2.77, 0.95, 2.84, null, 3.53]
     },
     {
       "id": "aderencia_rf",
@@ -185,7 +149,7 @@
       "direction": "higher",
       "meta": 100,
       "ytd": 75.42,
-      "monthly": [87, 84, 85, 85, 82, 55, 50]
+      "monthly": [87, 84, 85, 85, 82, 55, 50, 88, 90]
     },
     {
       "id": "aderencia_rf_wh",
@@ -195,7 +159,7 @@
       "direction": "higher",
       "meta": 100,
       "ytd": 77.51,
-      "monthly": [88, 84, 85, 86, 83, 56, 61]
+      "monthly": [88, 84, 85, 86, 83, 56, 61, 89, 92]
     },
     {
       "id": "aderencia_rf_portaria",
@@ -205,17 +169,7 @@
       "direction": "higher",
       "meta": 100,
       "ytd": 96.17,
-      "monthly": [99, 99, 99, 99, 98, 98, 84]
-    },
-    {
-      "id": "warehouse_eff",
-      "name": "Warehouse Efficiency",
-      "group": "Armazém",
-      "unit": "num",
-      "direction": "lower",
-      "meta": 10.81,
-      "ytd": 15.57,
-      "monthly": [15.57, null, null, null, null, null, null]
+      "monthly": [99, 99, 99, 99, 98, 98, 84, 98, 98]
     },
     {
       "id": "auditoria_5s",
@@ -225,7 +179,7 @@
       "direction": "higher",
       "meta": 100,
       "ytd": 88.88,
-      "monthly": [null, null, null, null, 80.95, 90.47, 95.23]
+      "monthly": [null, null, null, null, 80.95, 90.47, 100.0, 94.00, 90.00]
     },
     {
       "id": "desvios",
@@ -235,17 +189,7 @@
       "direction": "lower",
       "meta": 0,
       "ytd": 15.43,
-      "monthly": [0, 0, 0, 0, 27, 47, 34]
-    },
-    {
-      "id": "rpm_site_losses",
-      "name": "RPM Site Losses",
-      "group": "Perdas",
-      "unit": "money",
-      "direction": "lower",
-      "meta": 544003,
-      "ytd": 90667,
-      "monthly": [-560, 137120, -15036, 438430, -12112, -3839]
+      "monthly": [0, 0, 0, 0, 27, 47, 59, 21, 6]
     },
     {
       "id": "acidentes",
@@ -255,7 +199,7 @@
       "direction": "lower",
       "meta": 0,
       "ytd": 0,
-      "monthly": [0, 0, 0, 0, 0, 0, 0]
+      "monthly": [0, 0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
       "id": "janela_fob",
@@ -265,7 +209,7 @@
       "direction": "higher",
       "meta": 95,
       "ytd": 100,
-      "monthly": [null, 100, 100, null, null, null, null]
+      "monthly": [null, 100, 100, 98, 99, 98, 99, 99, 99]
     }
   ]
 }

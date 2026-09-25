@@ -35,13 +35,11 @@ export function renderInventoryDailyChart(chartManager, container, params) {
     series: [
       {
         type: "bar",
-        data: inventory.map((item) => ({
-          value: item.val,
-          itemStyle: {
-            color: item.val >= meta ? theme.colors.brand : theme.colors.destructive,
-          },
-        })),
-        itemStyle: { borderRadius: theme.style.smallBarRadius },
+        data: inventory.map((item) => item.val),
+        itemStyle: {
+          color: theme.colors.brand,
+          borderRadius: theme.style.smallBarRadius,
+        },
         markLine: createMetaLine(theme, meta, theme.text.targetInventory),
       },
     ],

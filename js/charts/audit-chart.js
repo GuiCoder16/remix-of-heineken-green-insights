@@ -58,11 +58,11 @@ export function renderAuditChart(chartManager, container, params) {
         smooth: theme.style.smooth,
         symbolSize: theme.style.dotRadius + 3,
         lineStyle: {
-          color: theme.colors.brandDeep,
+          color: theme.colors.brand,
           width: theme.style.strongLineWidth,
         },
         itemStyle: {
-          color: theme.colors.brandDeep,
+          color: theme.colors.brand,
         },
         markLine: createMetaLine(theme, 100, theme.text.targetAudit),
       },

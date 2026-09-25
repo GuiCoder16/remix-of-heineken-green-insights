@@ -34,14 +34,12 @@ export function renderInventoryMonthlyChart(chartManager, container, params) {
     series: [
       {
         type: "bar",
-        data: monthlyTime.map((item) => ({
-          value: item.minutes,
-          itemStyle: {
-            color: item.minutes <= meta ? theme.colors.brand : theme.colors.destructiveMixed,
-          },
-        })),
+        data: monthlyTime.map((item) => item.minutes),
         barMaxWidth: theme.style.barMaxWidth.monthlyTime,
-        itemStyle: { borderRadius: theme.style.monthlyBarRadius },
+        itemStyle: {
+          color: theme.colors.brand,
+          borderRadius: theme.style.monthlyBarRadius,
+        },
         markLine: createMetaLine(theme, meta, theme.text.targetMonthlyTime),
       },
     ],

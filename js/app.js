@@ -84,8 +84,17 @@ async function bootstrap() {
     }
 
     const data = await dataService.getDashboardData();
+    assertDefaultIndicatorExists(data, AppConfig.dashboard.defaultIndicatorId);
     state.setData(data);
   } catch (error) {
     state.setError(error);
+  }
+}
+
+function assertDefaultIndicatorExists(data, defaultIndicatorId) {
+  const exists = data.indicators.some((indicator) => indicator.id === defaultIndicatorId);
+
+  if (!exists) {
+    throw new Error(`Configuração inválida: defaultIndicatorId '${defaultIndicatorId}' não existe em data.indicators.`);
   }
 }

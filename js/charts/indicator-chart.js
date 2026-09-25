@@ -8,7 +8,6 @@ import {
   createTheme,
   createTooltip,
   createValueAxis,
-  getIndicatorBarColor,
   tooltipBlock,
   tooltipMetric,
   tooltipMuted,
@@ -39,14 +38,12 @@ export function renderIndicatorChart(chartManager, container, params) {
     series: [
       {
         type: "bar",
-        data: data.map((item) => ({
-          value: item.valor,
-          itemStyle: {
-            color: getIndicatorBarColor(theme, indicator, item.valor, barGradient),
-          },
-        })),
+        data: data.map((item) => item.valor),
         barMaxWidth: theme.style.barMaxWidth.indicator,
-        itemStyle: { borderRadius: theme.style.barRadius },
+        itemStyle: {
+          color: barGradient,
+          borderRadius: theme.style.barRadius,
+        },
         markLine: createMetaLine(
           theme,
           indicator.meta,
@@ -60,11 +57,11 @@ export function renderIndicatorChart(chartManager, container, params) {
         connectNulls: true,
         symbolSize: theme.style.dotRadius + 2,
         lineStyle: {
-          color: theme.colors.brandDeep,
+          color: theme.colors.brand,
           width: theme.style.lineWidth,
         },
         itemStyle: {
-          color: theme.colors.brandDeep,
+          color: theme.colors.brand,
         },
       },
     ],

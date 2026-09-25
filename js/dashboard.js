@@ -27,6 +27,6 @@ export function updateDashboardState(refs, state, config) {
   updateState(refs, state, config);
 }
 
-export function renderDashboardCharts(refs, state, chartManager, config) {
-  renderCharts(refs, state, chartManager, config);
+export function renderDashboardCharts(refs, state, chartManager, config, previousState = null) {
+  renderCharts(refs, state, chartManager, config, previousState);
 }

@@ -1,6 +1,7 @@
 import { ApiDataSource } from "./providers/api-data-source.js";
 import { GraphDataSource } from "./providers/graph-data-source.js";
 import { JsonFileDataSource } from "./providers/json-file-data-source.js";
+import { assertDashboardData } from "./validators/dashboard-data-validator.js";
 
 const PROVIDERS = Object.freeze({
   api: ApiDataSource,
@@ -23,10 +24,8 @@ export class DataService {
       return this.cache;
     }
 
-    const data = await this.dataSource.load(options);
-    assertDashboardData(data);
-    this.cache = data;
-    return data;
+    this.cache = assertDashboardData(await this.dataSource.load(options));
+    return this.cache;
   }
 
   clearCache() {
@@ -53,29 +52,4 @@ export function createDataSource(dataConfig, dependencies = {}) {
   }
 
   return new Provider(providerSettings, dependencies);
-}
-
-function assertDashboardData(data) {
-  const requiredArrays = [
-    "months",
-    "tempoDiario",
-    "acuracidadeDiaria",
-    "inventarioDiario",
-    "tempoMensalMin",
-    "indicators",
-  ];
-
-  if (!data || typeof data !== "object") {
-    throw new Error("Dashboard data must be an object.");
-  }
-
-  for (const key of requiredArrays) {
-    if (!Array.isArray(data[key])) {
-      throw new Error(`Dashboard data is missing array "${key}".`);
-    }
-  }
-
-  if (!data.metas || typeof data.metas !== "object") {
-    throw new Error('Dashboard data is missing object "metas".');
-  }
 }

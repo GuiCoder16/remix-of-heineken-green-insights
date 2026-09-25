@@ -37,9 +37,9 @@
   --radius: 0.75rem;
 
   /* Heineken palette */
-  --brand: oklch(0.55 0.17 148);           /* Heineken green */
-  --brand-glow: oklch(0.72 0.19 148);      /* lighter lime green */
-  --brand-deep: oklch(0.32 0.11 150);      /* deep bottle green */
+  --brand: #E30613;           /* Heineken green */
+  --brand-glow: #FF4D4F;      /* lighter lime green */
+  --brand-deep: #B00020;      /* deep bottle green */
   --gold: oklch(0.82 0.15 85);             /* star gold accent */
 
   --background: oklch(0.98 0.01 150);

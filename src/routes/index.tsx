@@ -114,7 +114,7 @@ function statusOf(ind: Indicator) {
       ? (ind.meta - ind.ytd) / Math.max(ind.meta, 0.0001)
       : (ind.ytd - ind.meta) / Math.max(ind.meta, 0.0001);
   if (gap <= 0.1) return { label: "Atenção", tone: "warn" as const };
-  return { label: "Crítico", tone: "bad" as const };
+  return { label: "Abaixo da meta", tone: "bad" as const };
 }
 
 /* -------------------------- Component -------------------------- */
@@ -230,7 +230,7 @@ function Dashboard() {
               {metasBatidas}/{INDICATORS.length} indicadores dentro da meta
             </span>
             <span className="text-xs text-muted-foreground">
-              Fonte: Indicadores BI · YTD (Jan–Jul)
+              Fonte: Indicadores BI · YTD (Jan–Sep)
             </span>
           </div>
         </header>

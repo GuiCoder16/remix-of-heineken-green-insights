@@ -67,3 +67,34 @@
 .chart-frame.has-chart::before {
   opacity: 0;
 }
+
+.chart-tooltip {
+  color: inherit;
+}
+
+.chart-tooltip-title {
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.chart-tooltip-metric {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+}
+
+.chart-tooltip-value {
+  color: inherit;
+  font-family: var(--font-mono);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.chart-tooltip-muted {
+  margin-top: 0.125rem;
+  color: var(--muted-foreground);
+  font-size: 0.6875rem;
+}

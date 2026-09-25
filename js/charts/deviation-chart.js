@@ -45,11 +45,11 @@ export function renderDeviationChart(chartManager, container, params) {
         smooth: theme.style.smooth,
         symbolSize: theme.style.dotRadius + 2,
         lineStyle: {
-          color: theme.colors.brandDeep,
+          color: theme.colors.brand,
           width: theme.style.strongLineWidth - 0.5,
         },
         itemStyle: {
-          color: theme.colors.brandDeep,
+          color: theme.colors.brand,
         },
         areaStyle: {
           color: chartManager.linearGradient(theme.gradients.accumulatedArea),

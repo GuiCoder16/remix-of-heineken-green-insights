@@ -26,7 +26,7 @@ export function getIndicatorStatus(indicator) {
     return { label: "Atenção", tone: "warn" };
   }
 
-  return { label: "Crítico", tone: "bad" };
+  return { label: "Abaixo da meta", tone: "bad" };
 }
 
 export function getIndicatorGap(indicator) {

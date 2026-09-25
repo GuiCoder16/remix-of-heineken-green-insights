@@ -39,11 +39,11 @@ export function renderAccuracyChart(chartManager, container, params) {
         smooth: theme.style.smooth,
         symbolSize: theme.style.dotRadius + 2,
         lineStyle: {
-          color: theme.colors.brandDeep,
+          color: theme.colors.brand,
           width: theme.style.lineWidth,
         },
         itemStyle: {
-          color: theme.colors.brandDeep,
+          color: theme.colors.brand,
         },
         areaStyle: {
           color: chartManager.linearGradient(theme.gradients.softArea),

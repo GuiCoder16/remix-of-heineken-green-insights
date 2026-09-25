@@ -23,7 +23,7 @@ export function renderHeader(data, summary) {
       </div>
       <div class="header-meta">
         <span class="status-pill">${summary.metasBatidas}/${data.indicators.length} indicadores dentro da meta</span>
-        <span class="header-source">Fonte: Indicadores BI · YTD (Jan–Jul)</span>
+        <span class="header-source">Fonte: Indicadores BI · YTD (Jan–Set)</span>
       </div>
     </header>
   `;

@@ -10,7 +10,7 @@
   --brand-deep: oklch(0.32 0.11 150);
   --gold: oklch(64.739% 0.13526 101.518);
 
-  --background: oklch(77.267% 0.086 144.734);
+  --background: oklch(0.98 0.01 150);
   --foreground: oklch(26.659% 0.00904 159.611);
   --card: oklch(98.483% 0.00121 107.824);
   --card-foreground: oklch(0.22 0.05 150);
@@ -28,6 +28,9 @@
   --input: oklch(0.9 0.02 150);
   --ring: var(--brand);
   --brand-foreground: oklch(0.99 0 0);
+  --chart-result: oklch(64.099% 0.19892 141.586);
+  --chart-result-glow: oklch(45.871% 0.10742 141.434);
+  --chart-result-deep: oklch(38.021% 0.10972 141.98);
   --chart-destructive-mixed: color-mix(in oklab, var(--destructive) 55%, var(--brand-deep));
 
   --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
