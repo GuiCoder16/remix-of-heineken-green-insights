@@ -176,7 +176,7 @@
       "name": "Auditoria 5S",
       "group": "Qualidade",
       "unit": "pct",
-      "direction": "higher",
+      "direction": "equal",
       "meta": 100,
       "ytd": 88.88,
       "monthly": [null, null, null, null, 80.95, 90.47, 100.0, 94.00, 90.00]
@@ -186,7 +186,7 @@
       "name": "Desvios",
       "group": "Qualidade",
       "unit": "num",
-      "direction": "lower",
+      "direction": "higher",
       "meta": 0,
       "ytd": 15.43,
       "monthly": [0, 0, 0, 0, 27, 47, 59, 21, 6]
