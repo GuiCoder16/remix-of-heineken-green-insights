@@ -65,11 +65,11 @@
       "id": "trt",
       "name": "TRT",
       "group": "Operação",
-      "unit": "pct",
+      "unit": "num",
       "direction": "higher",
       "meta": 95,
-      "ytd": 77.86,
-      "monthly": [60, 76, 69, 82, 68, 94, 96, 68, 109]
+      "ytd": 78.66,
+      "monthly": [60, 73, 68, 82, 68, 94, 86, 68, 109]
     },
     {
       "id": "ocupacao",
